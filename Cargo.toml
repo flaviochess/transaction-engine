@@ -1,0 +1,15 @@
+[package]
+name = "transaction-engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# CSV reader
+csv = "1.4.0"
+
+# CSV parser
+serde = { version = "1.0.228", features = ["derive"] }
+
+# rust library like Java BigDecimal
+rust_decimal = { version = "1.40.0", features = ["macros", "serde-float"] }
+rust_decimal_macros = "1.40.0"
