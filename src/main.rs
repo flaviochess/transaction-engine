@@ -8,7 +8,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 2 {
-        eprintln!("Use: cargo run -- <arquivo_csv>");
+        eprintln!("Use: cargo run -- <csv_file_path>");
         std::process::exit(1);
     }
 
